@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(field);
+}
+.gate{
+   top: 2000px;
+   left: 900px;
+}
+.img{
+    width:200px;
+    margin-top: 150px;
+}
+.leg{
+    height:100px;
+    width:300px;
+    margin:0 auto;
+    border-radius: 3px;
+    top:0;
+    left:-18px;
+    position: relative;
+    animation: leg 1s;
+    animation-iteration-count:infinite;
+    direction:alternate;
+  }
+  @keyframes leg{
+    0%{
+    }
+    100%{
+      transform:rotate(30deg);
+      transform-origin:left top;
+    }
+  }
+  .ball{
+    margin-top:200px;
+    margin-left: 630px;
+    width: 60px;
+    height: 60px;
+    background:whitesmoke;
+    color: #ffffff;
+    position: relative;
+    border-radius: 40px;
+    left:10;
+    top:0;
+    padding: 20px 10px 0px 10px;
+    animation: ball_animation .5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+  }
+  
+   @keyframes ball_animation{
+    0%{
+        transform: rotate(-7deg);
+    }
+    25%{
+        transform: rotate(-7deg);
+        left: 150px;
+    }
+    50%{
+        transform: rotate(-7deg);
+        left: 300px;
+    }
+    75%{
+        transform: rotate(-7deg);
+        left: 450px;
+    }
+    100%{
+      left:600px;
+    }
+  }
+  
+  /* .floor{
+    margin:0 auto;
+    height:20px;
+    width:200px;
+    position:relative;
+    top:200px;
+    background-color:#bbb;
+    
+  } */
